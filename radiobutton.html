@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Radio Button Vue JS</title>
+</head>
+<body>
+    <div id="app">
+      <h3>Pilihan Anda</h3>
+      <input type="radio" id="kelasngoding" v-model="pilih" value="Kelas Ngoding">
+      Kelas Ngoding
+      <br>
+      <input type="radio" id="kelastik" v-model="pilih" value="Kelas TIK">
+      Kelas TIK
+      <br>
+      <h3>Anda Telah memilih :</h3>
+      <p>{{ pilih }}</p>
+    </div>
+    <script src="vue.min.js"></script>
+    <script>
+      var app = new Vue({
+        el : '#app',
+        data : {
+          pilih: ``
+        }
+      })
+    </script>
+</body>
+</html>

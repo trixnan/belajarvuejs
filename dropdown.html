@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown</title>
+</head>
+<body>
+  <div id="app">
+    <h3>Pilih Kota : </h3>
+    <select v-model="pilih">
+      <option disabled value="">Pilih Kota Anda</option>
+      <option value="Indramayu">Indramayu</option>
+      <option value="Cirebon">Cirebon</option>
+      <option value="Subang">Subang</option>
+      <option value="Cianjur">Cianjur</option>
+    </select>
+    <h3>Kota Anda :</h3>
+    {{ pilih }}
+  </div>
+  <script src="vue.min.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        pilih: ``
+      }
+    })
+  </script>
+</body>
+</html>
